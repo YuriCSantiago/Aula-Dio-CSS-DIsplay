@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+        }
+
+        .exemplo {
+            background-color: palevioletred;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            margin: 8px;
+            padding: 30px;
+        }
+
+        .menu {
+            background-color: plum;
+        }
+
+        .menu ul li{
+            display: inline-block;
+            padding: 20px 20px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .esconder-elemento {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propriedade display</h1>
+    <p>A propriedade display vai determinar como essas caixas retangulares irão se comportar na hora de serem exibidas
+        na tela</p>
+
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplos:</h2>
+    <br><br>
+    <code>display: inline-block;</code>
+    <br><br>
+
+    <span class="exemplo inline-block">Exemplo Inline block 01</span>
+    <em class="exemplo inline-block">Exemplo Inline block 02</em>
+    <b class="exemplo inline-block">Exemplo Inline block 03</b>
+    <!--Inline-block, aceita a altura e largura que foi definida, que o inline não aceitava-->
+    <span class="exemplo inline-block">Exemplo Inline block 04</span>
+    <em class="exemplo inline-block">Exemplo Inline block 05</em>
+    <b class="exemplo inline-block">Exemplo Inline block 06</b>
+
+
+    <br><br>
+
+    <h3>Menu de nav</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Meu link 01</a></li>
+            <li><a href="#">Meu link 02</a></li>
+            <li><a href="#">Meu link 03</a></li>
+        </ul>
+    </nav>
+    <br><br>
+
+    <code>display: none;</code>
+    <br><br>
+    <div class="exemplo esconder-elemento">
+        <p>Exemplo 01</p>
+        <span>Oi</span>
+        <span>Trilha de CSS</span>
+    </div>
+    <ul class="menu">
+        <li><a href="#" class="esconder-elemento">Meu link 01</a></li>
+        <li><a href="#">Meu link 02</a></li>
+        <li><a href="#">Meu link 03</a></li>
+    </ul>
+</body>
+
+</html>
